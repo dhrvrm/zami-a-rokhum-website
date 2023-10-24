@@ -94,39 +94,40 @@ img {
 }
 
 
-h1,h2,h3,h4,h5{
+h1, h2, h3, h4, h5 {
     font-family: 'Vollkorn', serif;
     line-height: 1.2;
 }
+
 /* End Basic */
 
 /* Hero Start */
 
-.header nav{
+.header nav {
     position: fixed;
     top: 0;
     padding: 2rem;
 }
 
-.header__logo_img{
+.header__logo_img {
     max-height: 8rem;
 }
 
-.hero{
+.hero {
     position: relative;
     min-height: calc(100vh);
     overflow: hidden;
 }
 
-.hero__description{
+.hero__description {
     display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     min-height: 100vh;
     align-items: center;
     justify-content: center;
     padding-block: 10rem;
-    
+
     color: rgb(8, 8, 58);
     font-weight: 500;
     font-size: 8rem;
@@ -135,16 +136,18 @@ h1,h2,h3,h4,h5{
     z-index: 999;
 }
 
-.hero__description .first_block_one{
+.hero__description .first_block_one {
     grid-column-start: 2;
     grid-row-start: 1;
 }
-.hero__description .first_block_two{
+
+.hero__description .first_block_two {
     grid-column-start: 2;
     grid-row-start: 2;
 
 }
-.hero__description .second_block_one{
+
+.hero__description .second_block_one {
     grid-column-start: 4;
     grid-row-start: 3;
     letter-spacing: 3rem;
@@ -154,7 +157,8 @@ h1,h2,h3,h4,h5{
 
 
 }
-.hero__description .second_block_two{
+
+.hero__description .second_block_two {
     grid-column-start: 4;
     grid-row-start: 4;
     font-size: 12rem;
@@ -163,7 +167,7 @@ h1,h2,h3,h4,h5{
 }
 
 
-.hero__figure_img,.circle{
+.hero__figure_img, .circle {
     position: absolute;
     right: 0;
     bottom: -2rem;
@@ -172,7 +176,7 @@ h1,h2,h3,h4,h5{
     z-index: -1;
 }
 
-.circle{
+.circle {
     position: fixed;
 
     background-color: rgb(117, 227, 209);
@@ -188,24 +192,25 @@ h1,h2,h3,h4,h5{
 
 /* Profile Start */
 
-.about_instructor{
+.about_instructor {
     display: flex;
     gap: 4rem;
 
     padding: 8rem 40rem 4rem 20rem;
 }
 
-.about_instructor .instructor__img{
+.about_instructor .instructor__img {
     border-radius: 2rem;
     height: 100%;
     object-fit: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-.about_instructor .biography{
+.about_instructor .biography {
     /* padding-right: 20rem; */
 }
 
-.about_instructor .biography h2{
+.about_instructor .biography h2 {
     display: inline-block;
     font-size: 5rem;
     color: rgb(8, 8, 58);
@@ -213,10 +218,73 @@ h1,h2,h3,h4,h5{
     margin-bottom: 4rem;
 }
 
-.about_instructor .biography p{
+.about_instructor .biography p {
     font-size: 2rem;
     margin-bottom: 2rem;
 }
 
 
 /* Profile End */
+
+
+/* Services Start */
+.services_section {
+    padding: 8rem 20rem;
+}
+
+.services_section h2{
+    /* text-align: center; */
+    font-size: 5rem;
+    margin-bottom: 4rem;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+
+}
+
+.service {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    padding: 3.5rem 2rem;
+    border-radius: 2rem;
+    background-color: #efffff;
+    transition: all 300ms ease-in-out;
+    box-shadow: rgba(16, 95, 95, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    cursor: pointer;
+}
+
+.service:hover{
+    box-shadow: rgba(16, 95, 95, 0.4) -5px 5px, rgba(16, 95, 95, 0.3) -10px 10px, rgba(16, 95, 95, 0.2) -15px 15px, rgba(16, 95, 95, 0.1) -20px 20px, rgba(16, 95, 95, 0.05) -25px 25px;
+    
+}
+
+.service img {
+    border-radius: 1.25rem;
+
+}
+
+.service_description h3{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.service_description h3 span{
+    display: inline;
+    padding: 2px 1rem;
+    line-height: 0;
+    top: -2rem;
+    background-color: #f7e8ba;
+    margin-left: 0.5rem;
+    border: 1px solid yellow;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+.service_description p{
+    font-size: 1.5rem;
+}
+
+/* Services End */
