@@ -63,6 +63,7 @@ table {
 /* @import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;500;600;700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 /* Basic */
 *, *::after, *::before {
     box-sizing: border-box;
@@ -110,7 +111,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .header__logo_img {
-    max-height: 8rem;
+    max-height: 6rem;
 }
 
 .hero {
@@ -121,21 +122,30 @@ h1, h2, h3, h4, h5 {
 
 .hero__description {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    /* grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr); */
     min-height: 100vh;
     align-items: center;
     justify-content: center;
+    text-align: center;
     padding-block: 10rem;
+    /* padding-inline: 4rem; */
 
-    color: rgb(8, 8, 58);
     font-weight: 500;
     font-size: 8rem;
-    letter-spacing: 5rem;
+    letter-spacing: 3rem;
     text-transform: uppercase;
     z-index: 999;
+
+    background: #D4C611;
+    background: linear-gradient(to bottom right, #D4C611 0%, #82AB78 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
+.hero__description span{display: block;}
+
+/* 
 .hero__description .first_block_one {
     grid-column-start: 2;
     grid-row-start: 1;
@@ -146,23 +156,23 @@ h1, h2, h3, h4, h5 {
     grid-row-start: 2;
 
 }
-
+*/
 .hero__description .second_block_one {
-    grid-column-start: 4;
+    /* grid-column-start: 4;
     grid-row-start: 3;
     letter-spacing: 3rem;
     margin-top: 2rem;
-    margin-left: -12rem;
-    font-size: 6rem;
+    margin-left: -12rem; */
+    font-size: 4rem;
 
 
 }
 
 .hero__description .second_block_two {
-    grid-column-start: 4;
-    grid-row-start: 4;
+    /* grid-column-start: 4;
+    grid-row-start: 4; */
     font-size: 12rem;
-    color: rgb(214, 214, 84);
+    /* color: rgb(214, 214, 84); */
 
 }
 
@@ -221,7 +231,8 @@ h1, h2, h3, h4, h5 {
     font-size: 2rem;
     margin-bottom: 2rem;
 }
-.about_instructor .biography p span{
+
+.about_instructor .biography p span {
     border-bottom: 4px solid yellow;
 }
 
@@ -234,7 +245,7 @@ h1, h2, h3, h4, h5 {
     padding: 8rem 20rem;
 }
 
-.services_section h2{
+.services_section h2 {
     /* text-align: center; */
     font-size: 5rem;
     margin-bottom: 4rem;
@@ -255,13 +266,13 @@ h1, h2, h3, h4, h5 {
     border-radius: 2rem;
     background-color: #efffff;
     transition: all 300ms ease-in-out;
-    box-shadow: rgba(16, 95, 95, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    box-shadow: rgba(175, 225, 175, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
     cursor: pointer;
 }
 
-.service:hover{
-    box-shadow: rgba(16, 95, 95, 0.4) -5px 5px, rgba(16, 95, 95, 0.3) -10px 10px, rgba(16, 95, 95, 0.2) -15px 15px, rgba(16, 95, 95, 0.1) -20px 20px, rgba(16, 95, 95, 0.05) -25px 25px;
-    
+.service:hover {
+    box-shadow: rgba(175, 225, 175, 0.4) -5px 5px, rgba(175, 225, 175, 0.3) -10px 10px, rgba(175, 225, 175, 0.2) -15px 15px, rgba(175, 225, 175, 0.1) -20px 20px, rgba(175, 225, 175, 0.05) -25px 25px;
+
 }
 
 .service img {
@@ -269,12 +280,12 @@ h1, h2, h3, h4, h5 {
 
 }
 
-.service_description h3{
+.service_description h3 {
     font-size: 2rem;
     margin-bottom: 2rem;
 }
 
-.service_description h3 span{
+.service_description h3 span {
     display: inline;
     padding: 2px 1rem;
     line-height: 0;
@@ -285,7 +296,8 @@ h1, h2, h3, h4, h5 {
     border-radius: 0.5rem;
     font-size: 1rem;
 }
-.service_description p{
+
+.service_description p {
     font-size: 1.5rem;
 }
 
