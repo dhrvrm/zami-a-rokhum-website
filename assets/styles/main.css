@@ -1,3 +1,9 @@
+/* Font */
+/* @import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;500;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
 /* Reset */
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -59,10 +65,6 @@ table {
 }
 
 
-/* Font */
-/* @import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;500;600;700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 /* Basic */
 *, *::after, *::before {
@@ -101,6 +103,21 @@ h1, h2, h3, h4, h5 {
 }
 
 /* End Basic */
+
+
+/* Scroll Snapping */
+.scrollc {
+    /* scroll-snap-type: y mandatory; */
+    max-height: 100vh;
+    overflow-y: scroll;
+    /* scroll-snap-duration: 1s; */
+
+}
+
+.scroll {
+    /* scroll-snap-align: start; */
+}
+
 
 /* Hero Start */
 
@@ -188,12 +205,12 @@ h1, h2, h3, h4, h5 {
 
 .circle {
     position: fixed;
-
+    transition: all 100ms ease-in-out;
     background-color: #AFE1AF;
     width: 35vw;
     aspect-ratio: 1;
     border-radius: 50%;
-    right: -5vw;
+    right: -10%;
     bottom: -10vh;
 }
 
@@ -242,7 +259,7 @@ h1, h2, h3, h4, h5 {
 
 /* Services Start */
 .services_section {
-    padding: 8rem 20rem;
+    padding: 10rem 20rem;
 }
 
 .services_section h2 {
