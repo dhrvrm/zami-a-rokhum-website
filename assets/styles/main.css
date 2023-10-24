@@ -60,9 +60,9 @@ table {
 
 
 /* Font */
-@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;500;600;700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 /* Basic */
 *, *::after, *::before {
     box-sizing: border-box;
@@ -95,7 +95,7 @@ img {
 
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Vollkorn', serif;
+    font-family: 'Bebas Neue', sans-serif;
     line-height: 1.2;
 }
 
@@ -179,7 +179,7 @@ h1, h2, h3, h4, h5 {
 .circle {
     position: fixed;
 
-    background-color: rgb(117, 227, 209);
+    background-color: #AFE1AF;
     width: 35vw;
     aspect-ratio: 1;
     border-radius: 50%;
@@ -212,15 +212,17 @@ h1, h2, h3, h4, h5 {
 
 .about_instructor .biography h2 {
     display: inline-block;
-    font-size: 5rem;
+    font-size: 4rem;
     color: rgb(8, 8, 58);
-    border-bottom: 4px solid yellow;
     margin-bottom: 4rem;
 }
 
 .about_instructor .biography p {
     font-size: 2rem;
     margin-bottom: 2rem;
+}
+.about_instructor .biography p span{
+    border-bottom: 4px solid yellow;
 }
 
 
