@@ -125,6 +125,7 @@ h1, h2, h3, h4, h5 {
     position: fixed;
     top: 0;
     padding: 2rem;
+    z-index: 999;
 }
 
 .header__logo_img {
@@ -146,9 +147,8 @@ h1, h2, h3, h4, h5 {
     justify-content: center;
     text-align: center;
     padding-block: 10rem;
-    /* padding-inline: 4rem; */
 
-    font-weight: 500;
+    /* font-weight: 400; */
     font-size: 8rem;
     letter-spacing: 3rem;
     text-transform: uppercase;
@@ -160,7 +160,9 @@ h1, h2, h3, h4, h5 {
     -webkit-text-fill-color: transparent;
 }
 
-.hero__description span{display: block;}
+.hero__description span {
+    display: block;
+}
 
 /* 
 .hero__description .first_block_one {
@@ -207,7 +209,7 @@ h1, h2, h3, h4, h5 {
     position: fixed;
     transition: all 100ms ease-in-out;
     background-color: #AFE1AF;
-    width: 35vw;
+    width: 50vw;
     aspect-ratio: 1;
     border-radius: 50%;
     right: -10%;
@@ -223,7 +225,7 @@ h1, h2, h3, h4, h5 {
     display: flex;
     gap: 4rem;
 
-    padding: 8rem 40rem 4rem 20rem;
+    padding: 8rem 35rem 4rem 20rem;
 }
 
 .about_instructor .instructor__img {
@@ -319,3 +321,92 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Services End */
+
+
+#google_form {
+    height: 3300px;
+}
+
+@media screen and (max-width: 860px) {
+    .header nav {
+        background-color: #efffff;
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    }
+
+    .header__logo_img {
+        max-height: 4rem;
+    }
+
+    .hero__description {
+        min-height: 100vh;
+        align-items: end;
+        /* gap: 1rem; */
+        justify-content: center;
+        padding-block-end: 25rem;
+
+        font-size: 4rem;
+        letter-spacing: 3rem;
+        text-transform: uppercase;
+        z-index: 990;
+    }
+
+    .hero__description span {
+        display: flex;
+        justify-content: center;
+        min-width: 100%;
+        line-height: 1;
+    }
+
+    .hero__description .second_block_two {
+        font-size: 10rem;
+
+    }
+
+    .hero__figure_img {
+        right: 50%;
+        transform: translateX(50%);
+        width: 80vw;
+
+    }
+
+    .hero__figure_img, .circle {
+        width: 100vw;
+    }
+
+    .about_instructor {
+        flex-direction: column-reverse;
+        padding: 4rem;
+    }
+
+    .services_section {
+        padding: 4rem;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    .service {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+
+    }
+
+    #google_form {
+        height: 3900px;
+    }
+}
+
+@media screen and (min-width: 680px) and (max-width: 860px) {
+    
+    .services {
+        grid-template-columns: 1fr 1fr;
+    }
+    #google_form {
+        height: 3300px;
+    }
+
+}
