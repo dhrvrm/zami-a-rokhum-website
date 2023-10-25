@@ -207,7 +207,7 @@ h1, h2, h3, h4, h5 {
 
 .circle {
     position: fixed;
-    transition: all 100ms ease-in-out;
+    transition: all 20ms ease-in-out;
     background-color: #AFE1AF;
     width: 50vw;
     aspect-ratio: 1;
